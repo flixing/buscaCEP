@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="15dp"
+    >
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="0000-000"
+        android:numeric="decimal"
+        android:gravity="center_horizontal"
+        android:id="@+id/edtCep"
+        android:textSize="22dp"
+        android:maxLength="8"
+        />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Buscar"
+        android:id="@+id/btnChamaBuscaCEP"
+        android:textSize="25dp"
+        />
+
+    <TableLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/txtBC_cep"
+            android:gravity="center_horizontal"
+            android:textSize="20dp"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/txtBC_logradouro"
+            android:gravity="center_horizontal"
+            android:textSize="20dp"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/txtBC_complemento"
+            android:gravity="center_horizontal"
+            android:textSize="20dp"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/txtBC_bairro"
+            android:gravity="center_horizontal"
+            android:textSize="20dp"
+
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/txtBC_localidade"
+            android:gravity="center_horizontal"
+            android:textSize="20dp"
+
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/txtBC_ibge"
+            android:gravity="center_horizontal"
+            android:textSize="20dp"
+
+            />
+
+    </TableLayout>
+</TableLayout>

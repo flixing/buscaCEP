@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:layout_margin="15dp">
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="CEP"
+            android:id="@+id/txtDT_cep"
+            android:gravity="center_horizontal"
+            android:textSize="20dp"
+            android:layout_margin="10dp"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="LOGRADOURO"
+            android:id="@+id/txtDT_logradouro"
+            android:gravity="center_horizontal"
+            android:textSize="20dp"
+            android:layout_margin="10dp"
+            />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="COMPLEMENTO"
+        android:id="@+id/txtDT_complemento"
+        android:gravity="center_horizontal"
+        android:textSize="20dp"
+        android:layout_margin="10dp"
+        />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="BAIRRO"
+            android:id="@+id/txtDT_bairro"
+            android:gravity="center_horizontal"
+            android:textSize="20dp"
+            android:layout_margin="10dp"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="LOCALIDADE"
+            android:id="@+id/txtDT_localidade"
+            android:gravity="center_horizontal"
+            android:textSize="20dp"
+            android:layout_margin="10dp"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="IBGE"
+            android:id="@+id/txtDT_ibge"
+            android:gravity="center_horizontal"
+            android:textSize="20dp"
+            android:layout_margin="10dp"
+            />
+
+</LinearLayout>
