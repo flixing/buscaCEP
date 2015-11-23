@@ -49,14 +49,17 @@ public class BuscaCep extends AppCompatActivity {
                     cepEntrada = editTextCep.getText().toString();
                     editTextCep.setText("");
                     urlapi = "https://viacep.com.br/ws/" + cepEntrada + "/json/";
-                    progressDialog =ProgressDialog.show(BuscaCep.this, "Caregando . . . ","", true);
-                    progressDialog.setCancelable(true);
-                    new ProcessJSON().execute(urlapi);
+                    if(cepEntrada.length() == 8){
+                        progressDialog =ProgressDialog.show(BuscaCep.this, "Caregando . . . ","", true);
+                        progressDialog.setCancelable(true);
+                        new ProcessJSON().execute(urlapi);
+                    }else{
+                        Toast.makeText(getApplicationContext(), "Por favor informe um CEP válido.", Toast.LENGTH_LONG).show();
+                    }
 
                 }else{
                     Toast.makeText(getApplicationContext(), "Por favor verifique a conectividade de seu dispositivo.", Toast.LENGTH_LONG).show();
                 }
-
             }
         });
     }
@@ -97,7 +100,7 @@ public class BuscaCep extends AppCompatActivity {
 
         protected void onPostExecute(String stream){
 
-           // Toast.makeText(getApplicationContext(), "stream -" + stream, Toast.LENGTH_SHORT).show();
+            // Toast.makeText(getApplicationContext(), "stream -" + stream, Toast.LENGTH_SHORT).show();
 
             if(stream !=null){
                 try{
@@ -134,24 +137,24 @@ public class BuscaCep extends AppCompatActivity {
                     final TextView txtIbge = (TextView) findViewById(R.id.txtBC_ibge);
 
 
-                    txtCep.setText("CEP - "+cep);
-                    if(logradouro == null){
-                        txtLogradouro.setText("LOGRA. - "+logradouro);
+                    txtCep.setText("CEP "+cep);
+                    if(logradouro != " "){
+                        txtLogradouro.setText("LOGRA. "+logradouro);
                     }else{
                         txtLogradouro.setText("SEM LOGRADOURO");
                     }
-                    if(complemento == null){
-                        txtComplemento.setText("COMPL. - "+complemento);
+                    if(complemento != " "){
+                        txtComplemento.setText("COMPL. "+complemento);
                     }else{
                         txtComplemento.setText("SEM COMPLEMENTO");
                     }
-                    if(bairro == null){
-                        txtBairro.setText("BAIRRO - "+bairro);
+                    if(bairro != " "){
+                        txtBairro.setText("BAIRRO  "+bairro);
                     }else{
                         txtBairro.setText("SEM BAIRRO");
                     }
                     txtLocalidade.setText(localidade + " / " + uf);
-                    txtIbge.setText("IBGE - "+ibge);
+                    txtIbge.setText("IBGE "+ibge);
 
                 }catch(JSONException e){
                     e.printStackTrace();
@@ -159,6 +162,4 @@ public class BuscaCep extends AppCompatActivity {
             }
         }
     }
-
-
 }

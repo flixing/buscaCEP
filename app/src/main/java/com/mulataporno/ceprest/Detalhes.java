@@ -34,12 +34,12 @@ public class Detalhes extends AppCompatActivity {
                 DB db = new DB(Detalhes.this);
 
                 CEP cep = db.getSingleCep(Integer.parseInt(itemId));
-                txtCep.setText("CEP - "+cep.getCep());
-                txtLogradouro.setText(cep.getLogradouro());
-                txtComplemento.setText(cep.getComplemento());
-                txtBairro.setText(cep.getBairro());
+                txtCep.setText("CEP " + cep.getCep());
+                txtLogradouro.setText("LOGRA. " + cep.getLogradouro());
+                txtComplemento.setText("COMPL. " + cep.getComplemento());
+                txtBairro.setText("BAIRRO  " + cep.getBairro());
                 txtLocalidade.setText(cep.getLocalidade() +" / "+ cep.getUf());
-                txtibge.setText("IBGE - "+cep.getIbge());
+                txtibge.setText("IBGE "+cep.getIbge());
             }
         }
 
