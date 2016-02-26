@@ -1,4 +1,5 @@
-Feature: Test
+@valid_cep
+Feature: Find a valid CEP
 
   Scenario: As a user, I want find a valid CEP
 
