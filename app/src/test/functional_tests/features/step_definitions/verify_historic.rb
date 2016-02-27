@@ -13,5 +13,5 @@ Given(/^I press the Histórico button$/) do
 end
 
 When(/^I select the CEP wanted$/) do
-  pending # express the regexp above with the code you wish you had
+  
 end
