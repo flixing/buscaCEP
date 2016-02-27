@@ -12,4 +12,5 @@
   When(/^I press the buscar button$/) do
     sleep 03
     touch("android.widget.Button id:'btnChamaBuscaCEP'")
+    hide_soft_keyboard
   end

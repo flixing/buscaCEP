@@ -9,3 +9,4 @@ Feature: Find a valid CEP
     Then I see the text "Rua Girassol"
     And I see the text "Vila Madalena"
     And I see the text "São Paulo / SP"
+    And I go back
