@@ -10,6 +10,6 @@
   end
 
   When(/^I press the buscar button$/) do
-    touch("android.widget.Button id:'btnChamaBuscaCEP'")
     sleep 03
+    touch("android.widget.Button id:'btnChamaBuscaCEP'")
   end
