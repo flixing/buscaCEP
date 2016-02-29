@@ -13,5 +13,6 @@ Given(/^I press the Histórico button$/) do
 end
 
 When(/^I select the CEP wanted$/) do
-  
+  tap_mark("android.widget.ListView id:listView")
+  sleep 10
 end

@@ -1,0 +1,46 @@
+query(button)
+start_test_server_in_background
+start_test_server_in_background
+query(button)
+android.widget.Button
+start_test_server_in_background
+query("button index:1")
+query("button index:1").first.keys
+query("button index:1").first
+query("button index:1").first
+query("button index:1").first
+exit
+start_test_server_in_background
+query("button index:0")
+query("button")
+query("button").first
+query("button")
+query("button")
+query("button")
+query(android.widget.Button)]
+query(android.widget.Button)
+reinstall_apps
+start_test_server_in_background
+query("button")
+query
+query()
+query(button)
+query("list")
+query("button")
+exit
+start_test_server_in_background
+query("button")
+query("ListView")
+query("ListView")
+query("ListView")
+query("ListView")
+query("ListView")
+query("ListView").last
+exit
+start_test_server_in_background
+query("allbuttons")
+label "listView"
+query("ListView")
+query("ListView index:1")
+query("ListView index:0")
+exit
