@@ -20,7 +20,7 @@ App android de busca de CEP utilizando a api json do site https://viacep.com.br
 # Testes
 Para executar os testes funcionais serão necessários: 
 
-- Ruby na versão 2.2.1 ou superior (para instalar será necessário rbenv ou rvm)
+- Ruby na versão 2.2.1 ou superior (para instalar será necessário rbenv ou rvm);
 - Bundler (default):
 
 ```ruby
@@ -31,4 +31,12 @@ gem install bundler
 ```ruby
 bundle install
 ```
-Esse comando vai instalar todas as gems necessárias para execução dos testes.
+Esse comando vai instalar todas as gems necessárias para execução dos testes que estão no arquivo Gemfile. Importante ressaltar que a gem cucumber deverá ser a de versão 1.3.17.
+
+- Variáveis de ambiente ANDROID_HOME, ANDROID_SDK, JAVA_HOME (jdk 1.7.0 ou superior), ANDROID_TOOLS e ANDROID_PLATFORM_TOOLS devem estar com os apontamentos corretos;
+- Pacotes adb instalados corretamente via SDK Manager.
+- Versão do Android executadas para esse teste: 
+Tools => SDK Platafform Tools = 23.0.1
+Tools => Build- Tools = 22.0.1
+
+Android suportados: 4.1.2 até 5.1.1.
