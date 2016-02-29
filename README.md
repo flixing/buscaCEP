@@ -16,3 +16,7 @@ App desenvolovido com a finalidade de adquirir conhecimentos sob a plataforma an
 
 ## Créditos.
 App android de busca de CEP utilizando a api json do site https://viacep.com.br
+
+# Testes
+Para executar os testes funcionais serão necessários: 
+
