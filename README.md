@@ -20,3 +20,15 @@ App android de busca de CEP utilizando a api json do site https://viacep.com.br
 # Testes
 Para executar os testes funcionais serão necessários: 
 
+- Ruby na versão 2.2.1 ou superior (para instalar será necessário rbenv ou rvm)
+- Bundler (default):
+
+```ruby
+gem install bundler
+```
+- Executar o seguinte comando na pasta: buscaCEP/app/src/test/functional_tests 
+
+```ruby
+bundle install
+```
+Esse comando vai instalar todas as gems necessárias para execução dos testes.
