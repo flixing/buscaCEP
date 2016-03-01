@@ -40,3 +40,11 @@ Tools => SDK Platafform Tools = 23.0.1
 Tools => Build- Tools = 22.0.1
 
 Android suportados: 4.1.2 até 5.1.1.
+
+Para executar os testes deverá navegar até a pasta buscaCEP/app/src/test/functional_tests e digitar o seguinte comando: 
+```ruby
+calabash-android run BuscaCep.apk --require features features/specifications/feature_a_ser_executada.feature
+```
+ou caso queria rodar todos os testes, executar: 
+
+calabash-android run BuscaCep.apk
